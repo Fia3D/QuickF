@@ -41,7 +41,7 @@ def _image_unpack_in_materials(mats):
 				
 				if node.image in images:
 					continue
-				if node.image.packed_file is not None:
+				if node.image.packed_file is None:
 					continue
 				
 				images.add(node.image)
